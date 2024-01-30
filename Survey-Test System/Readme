@@ -1,0 +1,75 @@
+Abby Adeola
+ReadME for SE310 HW2D
+
+LOCATION OF SAMPLE FILES:
+-Survey files were stored in the directory named Surveys(Homework2/Surveys)
+-Test files were stored in the directory named Tests  (Homework2/Tests)
+-Response files were stored in the directory named Responses (Homework2/Responses)
+ the correct answer files are also stored here and all end with "-correctAnswer"
+
+CITATIONS
+1.Listing of files in a directory:
+https://www.tutorialspoint.com/how-to-get-list-of-all-files-folders-from-a-folder-in-java
+
+2. Formatting of whitespace in string in Java:
+https://www.baeldung.com/java-printstream-printf
+
+3. StringBuilder:
+suggested by intelliJ
+
+4. DecimalFormat:
+   From my SE181 project
+
+5. Frequency of elements in a list using Map:
+ https://www.techiedelight.com/count-frequency-elements-list-java/
+
+
+To the best of my knowledge, all the requirements for this
+homework works fine.
+
+SERIALIZATION
+Serialize, deserialize and createDirectory from simple_examples_v20 in the 
+student repo were followed. Modifications were made to fit the project.
+
+MULTIPLE RESPONSES:
+Users have the option to choose how many responses the survey or test taker can enter.
+The number of responses has to be greater than 0.
+For multiple choice, the no. of responses has to be > 0 and < no. of choices.
+
+Multiple responses was only implemented for:
+-multiple choice
+-essay
+-short answer
+-valid date
+
+Not implemented for:
+-True False
+
+Other:
+Matching accepts an exact number of responses that is needed to match the left and right
+columns. So it allows multiple responses, but it is fixed based on the options.
+
+SURVEY MENU
+Create, display, load, save, take,tabulate and modify menus were made.
+Serialization was used for survey loading and saving.
+
+TEST MENU
+Create, display, display with answers, load, save, take, tabulate, grade and modify menus were made.
+Serialization was used for test loading and saving.
+
+
+INPUT HANDLING
+The program does not quit unexpectedly.
+The program handles incorrect input, it asks the user for a valid input if incorrect input is entered.
+I used the abstractInputOutput from the Student Repo to read inputs and to output.
+I modified it to also read Date inputs.
+
+
+TABULATE
+After a Survey or Test is taken, it needs to be saved for the tabulated data to be stored after the program is terminated.
+I could have done this manually by doing a Test.serialize(loadedTest) or Survey.serialize(loadedSurvey) after tabulating or returning to the
+main menu, but I felt it would make more sense having the user actually save it themselves.
+
+LOAD
+Only when the selection is a Test, that a Response can be loaded.
+The load menu checks to ensure that the response loaded is for the right test, so another test's response cannot be loaded for a test.
