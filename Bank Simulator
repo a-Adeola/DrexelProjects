@@ -1,5 +1,0 @@
-This is a bank simulator project built using TDD.
-The bank features Savings, Checking and CD account types.
-Operations that can be performed include: Account creation, deposit, withdrawal, transfer, and pass time.
-
-The test folder covers testing scenarios of both valid and invalid operations to ensure accuracy and consistency.
