@@ -1,7 +1,0 @@
-Abby Adeola
-Othello Agent
-
-The random, minimax, and alpha-beta agents can play as the first and second players. 
-If the depth level is less than 1 in the agents, to exit the program. 
-At lower depth levels, my minimax and alpha-beta agents have similar speeds. 
-At higher depth levels, my alpha-beta agent is faster than my minimax algorithm.
