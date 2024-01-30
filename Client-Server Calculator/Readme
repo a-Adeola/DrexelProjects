@@ -1,13 +1,22 @@
 Abisade Adeola
 Se311 
 Simple Calculator
-A simple calculator created using Server-Client
+Description: A simple calculator created using Server-Client
 
 Begin by running the Server.java (Server/src/Server.java)
 Run the CalcClient.java (Client/src/CalcClient.java)
 
-Server:
-Tracks all calculator operations performed.
+SERVER
+Receives the successful equations from the client
+The user is asked if they would like to know the total number of successful equations received.
+If the user enters "yes" or "y", then the total is always displayed, along with the equations each time.
+Otherwise, nothing is shown subsequently, since the users first choice is used.
 
-Calculator:
-The command 'C' clears the error view.
+Client:
+The user can hit C on the calculator at any time to start a new calculation.
+When in an error state, both the client console and the calculator view notify the user
+of the error.
+Error state can only be exited by hitting the 'C' button.
+
+calculation outputs - left as doubles with one decimal place.
+
