@@ -1,1 +1,13 @@
+Abisade Adeola
+Se311 
+Simple Calculator
+A simple calculator created using Server-Client
 
+Begin by running the Server.java (Server/src/Server.java)
+Run the CalcClient.java (Client/src/CalcClient.java)
+
+Server:
+Tracks all calculator operations performed.
+
+Calculator:
+The command 'C' clears the error view.
