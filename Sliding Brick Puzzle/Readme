@@ -1,1 +1,13 @@
+Abisade Adeola
 
+My SBP is contained in a class, BrickPuzzle. 
+
+My node class is used to represent the different states of the Brick Puzzle. 
+The loadGame method takes in the given text file, reads the file, sets the width and height, then the remaining input is read then passed to the createGrid method. 
+The createGrid method takes the given input, and creates the matrix/game state. 
+The game state is then passed to the requested search function. 
+
+The heuristic I used for Astar was the manhattan heuristic.
+Regarding the space time complexity for my algorithms, A* is the slowest, then BFS, IDS, then DFS.
+
+The several methods of the class cover the required functionality provided in the assignment instructions. 
